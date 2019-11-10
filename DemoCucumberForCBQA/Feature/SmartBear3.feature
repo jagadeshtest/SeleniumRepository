@@ -21,4 +21,4 @@ Then Validate the product id creation is success
 
 Examples:
 |ProdINSId|NewProdName|NewProdIdDesc|ONUSSVCFee|ForeignSVCFee|
-|00548|prod46|prod46|2.00|3.00|
+|00548|prod47|prod47|2.00|3.00|
