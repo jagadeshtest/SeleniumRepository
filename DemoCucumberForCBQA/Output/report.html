@@ -46,7 +46,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Nov 10, 2019 03:05:37 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Nov 10, 2019 10:08:49 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -117,10 +117,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='66.667%'><span class='strong'>2</span> feature(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>3</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='33.333%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
             </div>
         </div>
@@ -131,10 +131,10 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> scenario(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='80%'><span class='strong'>8</span> scenario(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>10</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='20%'>2</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
             </div>
         </div>
@@ -145,10 +145,10 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='6.024%'><span class='strong'>5</span> step(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='71.084%'><span class='strong'>59</span> step(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='12.048%'>10</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='81.928%'>68</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='2.41%'>2</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='26.506%'>22</span> others
                 </div>
             </div>
         </div>
@@ -166,11 +166,11 @@
 </div>	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Automate CMSe Application</span>
-						<span class='test-time'>Nov 10, 2019 03:05:38 PM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-time'>Nov 10, 2019 10:08:51 PM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -179,14 +179,14 @@
     <a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
     <a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
-<div class='scenariooutline node' test-id='2' status='fail'>
-    <span class='duration right label'>0h 0m 17s+884ms</span>
+<div class='scenariooutline node' test-id='2' status='pass'>
+    <span class='duration right label'>0h 1m 4s+922ms</span>
     <div class="bdd-test">
-        <div class="scenario-name"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span> ScenarioOutline: Login Page</div>
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> ScenarioOutline: Login Page</div>
     </div>
     <ul class='steps'>
-        <li test-id='3' class='node scenario fail' status='fail'>
-            <div class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>Login Page</div>
+        <li test-id='3' class='node scenario pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Login Page</div>
             <ul class='gc steps'>
                     <li test-id='4' class='gc given pass' status='pass'>
                         <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given Open the browser</h6>
@@ -208,338 +208,188 @@
                         <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Click Login</h6>
                             <div class="node-step">passed</div>
                     </li>
-                    <li test-id='9' class='gc then fail' status='fail'>
-                        <h6 class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>Then Validate Login Page</h6>
-                            <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="bannerLinkForm"]/a[2]"}
-  (Session info: chrome=78.0.3904.87)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'MAA2-LTD47MX52', ip: '10.42.25.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\e3004592\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56939}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 04375ee4dea42346397ed1eb722e479a
-*** Element info: {Using=xpath, value=//*[@id="bannerLinkForm"]/a[2]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at stepDefinition.Implementation.validate_Login_Page(Implementation.java:81)
-	at ?.Then Validate Login Page(SmartBear1.feature:9)
-</textarea>
-                                                </li>
+                    <li test-id='9' class='gc then pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Validate Login Page</h6>
+                            <div class="node-step">passed</div>
+                    </li>
             </ul>
         </li>
     </ul>
 </div>
-<div class='scenariooutline node' test-id='10' status='fail'>
-    <span class='duration right label'>0h 0m 0s+92ms</span>
+<div class='scenariooutline node' test-id='10' status='pass'>
+    <span class='duration right label'>0h 0m 42s+21ms</span>
     <div class="bdd-test">
-        <div class="scenario-name"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span> ScenarioOutline: Open Card</div>
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> ScenarioOutline: Open Card</div>
     </div>
     <ul class='steps'>
-        <li test-id='11' class='node scenario fail' status='fail'>
-            <div class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>Open Card</div>
+        <li test-id='11' class='node scenario pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Open Card</div>
             <ul class='gc steps'>
-                    <li test-id='12' class='gc when fail' status='fail'>
-                        <h6 class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>When Enter Institution ID  "00548"</h6>
-                            <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='inst']"}
-  (Session info: chrome=78.0.3904.87)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'MAA2-LTD47MX52', ip: '10.42.25.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\e3004592\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56939}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 04375ee4dea42346397ed1eb722e479a
-*** Element info: {Using=xpath, value=//*[@id='inst']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at stepDefinition.Implementation.enter_Institution_ID(Implementation.java:100)
-	at ?.When Enter Institution ID  "00548"(SmartBear1.feature:17)
-</textarea>
-                                                </li>
-                    <li test-id='13' class='gc when skip' status='skip'>
-                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When Click Open Card</h6>
-                            <div class="node-step">skipped</div>
+                    <li test-id='12' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Enter Institution ID  "00548"</h6>
+                            <div class="node-step">passed</div>
                     </li>
-                    <li test-id='14' class='gc when skip' status='skip'>
-                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When Click Prefix number</h6>
-                            <div class="node-step">skipped</div>
+                    <li test-id='13' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Click Open Card</h6>
+                            <div class="node-step">passed</div>
                     </li>
-                    <li test-id='15' class='gc when skip' status='skip'>
-                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When Click Generate Card</h6>
-                            <div class="node-step">skipped</div>
+                    <li test-id='14' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Click Prefix number</h6>
+                            <div class="node-step">passed</div>
                     </li>
-                    <li test-id='16' class='gc when skip' status='skip'>
-                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When Enter Name   "Roger Stanly"</h6>
-                            <div class="node-step">skipped</div>
+                    <li test-id='15' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Click Generate Card</h6>
+                            <div class="node-step">passed</div>
                     </li>
-                    <li test-id='17' class='gc when skip' status='skip'>
-                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When Enter Address "First Street"</h6>
-                            <div class="node-step">skipped</div>
+                    <li test-id='16' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Enter Name   "Roger Stanly"</h6>
+                            <div class="node-step">passed</div>
                     </li>
-                    <li test-id='18' class='gc when skip' status='skip'>
-                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When Enter City  "Milwaukee"</h6>
-                            <div class="node-step">skipped</div>
+                    <li test-id='17' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Enter Address "First Street"</h6>
+                            <div class="node-step">passed</div>
                     </li>
-                    <li test-id='19' class='gc when skip' status='skip'>
-                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When Enter State "WI"</h6>
-                            <div class="node-step">skipped</div>
+                    <li test-id='18' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Enter City  "Milwaukee"</h6>
+                            <div class="node-step">passed</div>
                     </li>
-                    <li test-id='20' class='gc when skip' status='skip'>
-                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When Enter ZIP  "12345"</h6>
-                            <div class="node-step">skipped</div>
+                    <li test-id='19' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Enter State "WI"</h6>
+                            <div class="node-step">passed</div>
                     </li>
-                    <li test-id='21' class='gc when skip' status='skip'>
-                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When Enter Offset "1234"</h6>
-                            <div class="node-step">skipped</div>
+                    <li test-id='20' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Enter ZIP  "12345"</h6>
+                            <div class="node-step">passed</div>
                     </li>
-                    <li test-id='22' class='gc when skip' status='skip'>
-                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When Click continue button</h6>
-                            <div class="node-step">skipped</div>
+                    <li test-id='21' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Enter Offset "1234"</h6>
+                            <div class="node-step">passed</div>
                     </li>
-                    <li test-id='23' class='gc when skip' status='skip'>
-                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When Click finalContinue button</h6>
-                            <div class="node-step">skipped</div>
+                    <li test-id='22' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Click continue button</h6>
+                            <div class="node-step">passed</div>
                     </li>
-                    <li test-id='24' class='gc when skip' status='skip'>
-                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When Click submitFinal</h6>
-                            <div class="node-step">skipped</div>
+                    <li test-id='23' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Click finalContinue button</h6>
+                            <div class="node-step">passed</div>
                     </li>
-                    <li test-id='25' class='gc then skip' status='skip'>
-                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Then Get the card number</h6>
-                            <div class="node-step">skipped</div>
+                    <li test-id='24' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Click submitFinal</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='25' class='gc then pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Get the card number</h6>
+                            <div class="node-step">passed</div>
                     </li>
             </ul>
         </li>
     </ul>
 </div>
-<div class='scenario node' test-id='26' status='fail'>
+<div class='scenario node' test-id='26' status='pass'>
     <div class='category-list'>
         <span class='category label'>@regression</span>
     </div>
-    <span class='duration right label'>0h 0m 1s+66ms</span>
+    <span class='duration right label'>0h 0m 3s+834ms</span>
     <div class="bdd-test">
-        <div class="scenario-name"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span> Scenario: Search Card</div>
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Search Card</div>
     </div>
     <ul class='steps'>
-        <li test-id='27' class='node when fail' status='fail'>
-            <div class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>When Click Search Button</div>
-                <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='searchSubmit']"}
-  (Session info: chrome=78.0.3904.87)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'MAA2-LTD47MX52', ip: '10.42.25.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\e3004592\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56939}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 04375ee4dea42346397ed1eb722e479a
-*** Element info: {Using=xpath, value=//*[@id='searchSubmit']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at stepDefinition.Implementation.click_Search_Button(Implementation.java:238)
-	at ?.When Click Search Button(SmartBear1.feature:39)
-</textarea>
+        <li test-id='27' class='node when pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Click Search Button</div>
+                <div class="node-step">passed</div>
         </li>
     </ul>
 </div>
-<div class='scenariooutline node' test-id='28' status='fail'>
-    <span class='duration right label'>0h 0m 0s+51ms</span>
+<div class='scenariooutline node' test-id='28' status='pass'>
+    <span class='duration right label'>0h 0m 38s+319ms</span>
     <div class="bdd-test">
-        <div class="scenario-name"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span> ScenarioOutline: Card Status change</div>
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> ScenarioOutline: Card Status change</div>
     </div>
     <ul class='steps'>
-        <li test-id='29' class='node scenario fail' status='fail'>
-            <div class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>Card Status change</div>
+        <li test-id='29' class='node scenario pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Card Status change</div>
             <ul class='gc steps'>
-                    <li test-id='30' class='gc when fail' status='fail'>
-                        <h6 class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>When Click Neg File/Status</h6>
-                            <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='NegFile']"}
-  (Session info: chrome=78.0.3904.87)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'MAA2-LTD47MX52', ip: '10.42.25.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\e3004592\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56939}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 04375ee4dea42346397ed1eb722e479a
-*** Element info: {Using=xpath, value=//*[@id='NegFile']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at stepDefinition.Implementation.click_Neg_File_Status(Implementation.java:246)
-	at ?.When Click Neg File/Status(SmartBear1.feature:42)
-</textarea>
-                                                </li>
-                    <li test-id='31' class='gc when skip' status='skip'>
-                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When Click Active Check box</h6>
-                            <div class="node-step">skipped</div>
+                    <li test-id='30' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Click Neg File/Status</h6>
+                            <div class="node-step">passed</div>
                     </li>
-                    <li test-id='32' class='gc when skip' status='skip'>
-                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When Select Do not add in Exception File Update Code "Do Not Add"</h6>
-                            <div class="node-step">skipped</div>
+                    <li test-id='31' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Click Active Check box</h6>
+                            <div class="node-step">passed</div>
                     </li>
-                    <li test-id='33' class='gc when skip' status='skip'>
-                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When Select Do not honor in Exception File Action Code "Do Not Honor"</h6>
-                            <div class="node-step">skipped</div>
+                    <li test-id='32' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Select Do not add in Exception File Update Code "Do Not Add"</h6>
+                            <div class="node-step">passed</div>
                     </li>
-                    <li test-id='34' class='gc when skip' status='skip'>
-                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When Enter Card status change submit</h6>
-                            <div class="node-step">skipped</div>
+                    <li test-id='33' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Select Do not honor in Exception File Action Code "Do Not Honor"</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='34' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Enter Card status change submit</h6>
+                            <div class="node-step">passed</div>
                     </li>
             </ul>
         </li>
     </ul>
 </div>
-<div class='scenariooutline node' test-id='35' status='fail'>
-    <span class='duration right label'>0h 0m 0s+50ms</span>
+<div class='scenariooutline node' test-id='35' status='pass'>
+    <span class='duration right label'>0h 0m 5s+672ms</span>
     <div class="bdd-test">
-        <div class="scenario-name"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span> ScenarioOutline: Add Fund</div>
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> ScenarioOutline: Add Fund</div>
     </div>
     <ul class='steps'>
-        <li test-id='36' class='node scenario fail' status='fail'>
-            <div class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>Add Fund</div>
+        <li test-id='36' class='node scenario pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Add Fund</div>
             <ul class='gc steps'>
-                    <li test-id='37' class='gc when fail' status='fail'>
-                        <h6 class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>When Click Add Fund</h6>
-                            <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='PrepaidDebit']"}
-  (Session info: chrome=78.0.3904.87)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'MAA2-LTD47MX52', ip: '10.42.25.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\e3004592\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56939}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 04375ee4dea42346397ed1eb722e479a
-*** Element info: {Using=xpath, value=//*[@id='PrepaidDebit']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at stepDefinition.Implementation.click_Add_Fund(Implementation.java:292)
-	at ?.When Click Add Fund(SmartBear1.feature:53)
-</textarea>
-                                                </li>
-                    <li test-id='38' class='gc when skip' status='skip'>
-                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When Enter Amount "1000.00"</h6>
-                            <div class="node-step">skipped</div>
+                    <li test-id='37' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Click Add Fund</h6>
+                            <div class="node-step">passed</div>
                     </li>
-                    <li test-id='39' class='gc when skip' status='skip'>
-                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When Click Add Fund Submit Button</h6>
-                            <div class="node-step">skipped</div>
+                    <li test-id='38' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Enter Amount "1000.00"</h6>
+                            <div class="node-step">passed</div>
                     </li>
-                    <li test-id='40' class='gc then skip' status='skip'>
-                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Then Validate the add fund</h6>
-                            <div class="node-step">skipped</div>
+                    <li test-id='39' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Click Add Fund Submit Button</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='40' class='gc then pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Validate the add fund</h6>
+                            <div class="node-step">passed</div>
                     </li>
             </ul>
         </li>
     </ul>
 </div>
-<div class='scenariooutline node' test-id='41' status='fail'>
-    <span class='duration right label'>0h 0m 0s+53ms</span>
+<div class='scenariooutline node' test-id='41' status='pass'>
+    <span class='duration right label'>0h 0m 5s+932ms</span>
     <div class="bdd-test">
-        <div class="scenario-name"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span> ScenarioOutline: Card to card transfer</div>
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> ScenarioOutline: Card to card transfer</div>
     </div>
     <ul class='steps'>
-        <li test-id='42' class='node scenario fail' status='fail'>
-            <div class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>Card to card transfer</div>
+        <li test-id='42' class='node scenario pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Card to card transfer</div>
             <ul class='gc steps'>
-                    <li test-id='43' class='gc when fail' status='fail'>
-                        <h6 class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>When Click cardtocard transfer</h6>
-                            <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='PrepaidDebit']"}
-  (Session info: chrome=78.0.3904.87)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'MAA2-LTD47MX52', ip: '10.42.25.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\e3004592\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56939}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 04375ee4dea42346397ed1eb722e479a
-*** Element info: {Using=xpath, value=//*[@id='PrepaidDebit']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at stepDefinition.Implementation.click_cardtocard_transfer(Implementation.java:332)
-	at ?.When Click cardtocard transfer(SmartBear1.feature:64)
-</textarea>
-                                                </li>
-                    <li test-id='44' class='gc when skip' status='skip'>
-                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When Enter Transfer Amount "5.00"</h6>
-                            <div class="node-step">skipped</div>
+                    <li test-id='43' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Click cardtocard transfer</h6>
+                            <div class="node-step">passed</div>
                     </li>
-                    <li test-id='45' class='gc when skip' status='skip'>
-                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When Enter funding card number "1002000000009916"</h6>
-                            <div class="node-step">skipped</div>
+                    <li test-id='44' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Enter Transfer Amount "5.00"</h6>
+                            <div class="node-step">passed</div>
                     </li>
-                    <li test-id='46' class='gc when skip' status='skip'>
-                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When click ctoc Submit</h6>
-                            <div class="node-step">skipped</div>
+                    <li test-id='45' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Enter funding card number "1002000000009916"</h6>
+                            <div class="node-step">passed</div>
                     </li>
-                    <li test-id='47' class='gc then skip' status='skip'>
-                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Then Validate card to card transfer</h6>
-                            <div class="node-step">skipped</div>
+                    <li test-id='46' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When click ctoc Submit</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='47' class='gc then pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Validate card to card transfer</h6>
+                            <div class="node-step">passed</div>
                     </li>
             </ul>
         </li>
@@ -547,11 +397,11 @@ Session ID: 04375ee4dea42346397ed1eb722e479a
 </div>
 					</div>
 				</li>
-				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='48'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='48'>
 					<div class='test-heading'>
 						<span class='test-name'>Automate CMSe Application</span>
-						<span class='test-time'>Nov 10, 2019 03:05:57 PM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-time'>Nov 10, 2019 10:11:31 PM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -560,125 +410,75 @@ Session ID: 04375ee4dea42346397ed1eb722e479a
     <a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
     <a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
-<div class='scenariooutline node' test-id='49' status='fail'>
-    <span class='duration right label'>0h 0m 0s+40ms</span>
+<div class='scenariooutline node' test-id='49' status='pass'>
+    <span class='duration right label'>0h 0m 27s+552ms</span>
     <div class="bdd-test">
-        <div class="scenario-name"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span> ScenarioOutline: Prepaid Card Pin Change</div>
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> ScenarioOutline: Prepaid Card Pin Change</div>
     </div>
     <ul class='steps'>
-        <li test-id='50' class='node scenario fail' status='fail'>
-            <div class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>Prepaid Card Pin Change</div>
+        <li test-id='50' class='node scenario pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Prepaid Card Pin Change</div>
             <ul class='gc steps'>
-                    <li test-id='51' class='gc when fail' status='fail'>
-                        <h6 class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>When Click cards and pin link</h6>
-                            <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='CardPin']"}
-  (Session info: chrome=78.0.3904.87)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'MAA2-LTD47MX52', ip: '10.42.25.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\e3004592\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56939}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 04375ee4dea42346397ed1eb722e479a
-*** Element info: {Using=xpath, value=//*[@id='CardPin']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at stepDefinition.Implementation.click_cards_and_pin_link(Implementation.java:391)
-	at ?.When Click cards and pin link(SmartBear2.feature:4)
-</textarea>
-                                                </li>
-                    <li test-id='52' class='gc when skip' status='skip'>
-                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When Click update</h6>
-                            <div class="node-step">skipped</div>
+                    <li test-id='51' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Click cards and pin link</h6>
+                            <div class="node-step">passed</div>
                     </li>
-                    <li test-id='53' class='gc when skip' status='skip'>
-                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When Enter new PIN "1234"</h6>
-                            <div class="node-step">skipped</div>
+                    <li test-id='52' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Click update</h6>
+                            <div class="node-step">passed</div>
                     </li>
-                    <li test-id='54' class='gc when skip' status='skip'>
-                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When Re enter new pin "1234"</h6>
-                            <div class="node-step">skipped</div>
+                    <li test-id='53' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Enter new PIN "1234"</h6>
+                            <div class="node-step">passed</div>
                     </li>
-                    <li test-id='55' class='gc when skip' status='skip'>
-                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When Click update pin submit</h6>
-                            <div class="node-step">skipped</div>
+                    <li test-id='54' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Re enter new pin "1234"</h6>
+                            <div class="node-step">passed</div>
                     </li>
-                    <li test-id='56' class='gc then skip' status='skip'>
-                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Then Validate PIN Change</h6>
-                            <div class="node-step">skipped</div>
+                    <li test-id='55' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Click update pin submit</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='56' class='gc then pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Validate PIN Change</h6>
+                            <div class="node-step">passed</div>
                     </li>
             </ul>
         </li>
     </ul>
 </div>
-<div class='scenariooutline node' test-id='57' status='fail'>
-    <span class='duration right label'>0h 0m 0s+40ms</span>
+<div class='scenariooutline node' test-id='57' status='pass'>
+    <span class='duration right label'>0h 0m 12s+258ms</span>
     <div class="bdd-test">
-        <div class="scenario-name"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span> ScenarioOutline: Card Information update</div>
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> ScenarioOutline: Card Information update</div>
     </div>
     <ul class='steps'>
-        <li test-id='58' class='node scenario fail' status='fail'>
-            <div class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>Card Information update</div>
+        <li test-id='58' class='node scenario pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Card Information update</div>
             <ul class='gc steps'>
-                    <li test-id='59' class='gc when fail' status='fail'>
-                        <h6 class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>When Click Card information link</h6>
-                            <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='CustomerInformation']"}
-  (Session info: chrome=78.0.3904.87)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'MAA2-LTD47MX52', ip: '10.42.25.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\e3004592\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56939}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 04375ee4dea42346397ed1eb722e479a
-*** Element info: {Using=xpath, value=//*[@id='CustomerInformation']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at stepDefinition.Implementation.click_Card_information_link(Implementation.java:443)
-	at ?.When Click Card information link(SmartBear2.feature:17)
-</textarea>
-                                                </li>
-                    <li test-id='60' class='gc when skip' status='skip'>
-                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When Click Card info update link</h6>
-                            <div class="node-step">skipped</div>
+                    <li test-id='59' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Click Card information link</h6>
+                            <div class="node-step">passed</div>
                     </li>
-                    <li test-id='61' class='gc when skip' status='skip'>
-                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When Update address "123 Main Street"</h6>
-                            <div class="node-step">skipped</div>
+                    <li test-id='60' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Click Card info update link</h6>
+                            <div class="node-step">passed</div>
                     </li>
-                    <li test-id='62' class='gc when skip' status='skip'>
-                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When Click Card info Continue buuton</h6>
-                            <div class="node-step">skipped</div>
+                    <li test-id='61' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Update address "123 Main Street"</h6>
+                            <div class="node-step">passed</div>
                     </li>
-                    <li test-id='63' class='gc when skip' status='skip'>
-                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When Click Card info Submit Button</h6>
-                            <div class="node-step">skipped</div>
+                    <li test-id='62' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Click Card info Continue buuton</h6>
+                            <div class="node-step">passed</div>
                     </li>
-                    <li test-id='64' class='gc when skip' status='skip'>
-                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When Validate the Card info update</h6>
-                            <div class="node-step">skipped</div>
+                    <li test-id='63' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Click Card info Submit Button</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='64' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Validate the Card info update</h6>
+                            <div class="node-step">passed</div>
                     </li>
             </ul>
         </li>
@@ -689,7 +489,7 @@ Session ID: 04375ee4dea42346397ed1eb722e479a
 				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='65'>
 					<div class='test-heading'>
 						<span class='test-name'>Automate CMSe Application</span>
-						<span class='test-time'>Nov 10, 2019 03:05:57 PM</span>
+						<span class='test-time'>Nov 10, 2019 10:12:11 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
@@ -700,7 +500,7 @@ Session ID: 04375ee4dea42346397ed1eb722e479a
     <a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
 <div class='scenariooutline node' test-id='66' status='fail'>
-    <span class='duration right label'>0h 0m 0s+182ms</span>
+    <span class='duration right label'>0h 0m 11s+124ms</span>
     <div class="bdd-test">
         <div class="scenario-name"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span> ScenarioOutline: Product ID Creation and Linking to Card Number</div>
     </div>
@@ -708,17 +508,41 @@ Session ID: 04375ee4dea42346397ed1eb722e479a
         <li test-id='67' class='node scenario fail' status='fail'>
             <div class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>Product ID Creation and Linking to Card Number</div>
             <ul class='gc steps'>
-                    <li test-id='68' class='gc when fail' status='fail'>
-                        <h6 class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>When Click product id tab</h6>
-                            <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='ProductMenuTab']"}
-  (Session info: chrome=78.0.3904.87)
+                    <li test-id='68' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Click product id tab</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='69' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Enter instituion id in product id search  "00548"</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='70' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Click Add product id</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='71' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Enter the name of product id  "prod47"</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='72' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Enter the product id description "prod47"</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='73' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Click Continue button in add product id page</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='74' class='gc when fail' status='fail'>
+                        <h6 class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>When Click Service Charge link</h6>
+                            <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='SVC']"}
+  (Session info: chrome=78.0.3904.97)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'MAA2-LTD47MX52', ip: '10.42.25.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'MAA2-LTD47MX52', ip: '10.42.27.77', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\e3004592\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56939}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 04375ee4dea42346397ed1eb722e479a
-*** Element info: {Using=xpath, value=//*[@id='ProductMenuTab']}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\e3004592\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64414}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c067e5d148cd271632bdd17e1b42d758
+*** Element info: {Using=xpath, value=//*[@id='SVC']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -733,34 +557,10 @@ Session ID: 04375ee4dea42346397ed1eb722e479a
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at stepDefinition.Implementation.click_product_id_tab(Implementation.java:496)
-	at ?.When Click product id tab(SmartBear3.feature:3)
+	at stepDefinition.Implementation.click_Service_Charge_link(Implementation.java:545)
+	at ?.When Click Service Charge link(SmartBear3.feature:9)
 </textarea>
                                                 </li>
-                    <li test-id='69' class='gc when skip' status='skip'>
-                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When Enter instituion id in product id search  "00548"</h6>
-                            <div class="node-step">skipped</div>
-                    </li>
-                    <li test-id='70' class='gc when skip' status='skip'>
-                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When Click Add product id</h6>
-                            <div class="node-step">skipped</div>
-                    </li>
-                    <li test-id='71' class='gc when skip' status='skip'>
-                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When Enter the name of product id  "prod47"</h6>
-                            <div class="node-step">skipped</div>
-                    </li>
-                    <li test-id='72' class='gc when skip' status='skip'>
-                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When Enter the product id description "prod47"</h6>
-                            <div class="node-step">skipped</div>
-                    </li>
-                    <li test-id='73' class='gc when skip' status='skip'>
-                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When Click Continue button in add product id page</h6>
-                            <div class="node-step">skipped</div>
-                    </li>
-                    <li test-id='74' class='gc when skip' status='skip'>
-                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When Click Service Charge link</h6>
-                            <div class="node-step">skipped</div>
-                    </li>
                     <li test-id='75' class='gc when skip' status='skip'>
                         <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When Click Network transaction</h6>
                             <div class="node-step">skipped</div>
@@ -810,17 +610,41 @@ Session ID: 04375ee4dea42346397ed1eb722e479a
         <li test-id='86' class='node scenario fail' status='fail'>
             <div class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>Product ID Creation and Linking to Card Number</div>
             <ul class='gc steps'>
-                    <li test-id='87' class='gc when fail' status='fail'>
-                        <h6 class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>When Click product id tab</h6>
-                            <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='ProductMenuTab']"}
-  (Session info: chrome=78.0.3904.87)
+                    <li test-id='87' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Click product id tab</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='88' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Enter instituion id in product id search  "00548"</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='89' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Click Add product id</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='90' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Enter the name of product id  "prod50"</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='91' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Enter the product id description "prod50"</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='92' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Click Continue button in add product id page</h6>
+                            <div class="node-step">passed</div>
+                    </li>
+                    <li test-id='93' class='gc when fail' status='fail'>
+                        <h6 class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>When Click Service Charge link</h6>
+                            <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='SVC']"}
+  (Session info: chrome=78.0.3904.97)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'MAA2-LTD47MX52', ip: '10.42.25.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'MAA2-LTD47MX52', ip: '10.42.27.77', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\e3004592\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56939}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 04375ee4dea42346397ed1eb722e479a
-*** Element info: {Using=xpath, value=//*[@id='ProductMenuTab']}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\e3004592\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64414}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c067e5d148cd271632bdd17e1b42d758
+*** Element info: {Using=xpath, value=//*[@id='SVC']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -835,34 +659,10 @@ Session ID: 04375ee4dea42346397ed1eb722e479a
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at stepDefinition.Implementation.click_product_id_tab(Implementation.java:496)
-	at ?.When Click product id tab(SmartBear3.feature:3)
+	at stepDefinition.Implementation.click_Service_Charge_link(Implementation.java:545)
+	at ?.When Click Service Charge link(SmartBear3.feature:9)
 </textarea>
                                                 </li>
-                    <li test-id='88' class='gc when skip' status='skip'>
-                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When Enter instituion id in product id search  "00548"</h6>
-                            <div class="node-step">skipped</div>
-                    </li>
-                    <li test-id='89' class='gc when skip' status='skip'>
-                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When Click Add product id</h6>
-                            <div class="node-step">skipped</div>
-                    </li>
-                    <li test-id='90' class='gc when skip' status='skip'>
-                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When Enter the name of product id  "prod50"</h6>
-                            <div class="node-step">skipped</div>
-                    </li>
-                    <li test-id='91' class='gc when skip' status='skip'>
-                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When Enter the product id description "prod50"</h6>
-                            <div class="node-step">skipped</div>
-                    </li>
-                    <li test-id='92' class='gc when skip' status='skip'>
-                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When Click Continue button in add product id page</h6>
-                            <div class="node-step">skipped</div>
-                    </li>
-                    <li test-id='93' class='gc when skip' status='skip'>
-                        <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When Click Service Charge link</h6>
-                            <div class="node-step">skipped</div>
-                    </li>
                     <li test-id='94' class='gc when skip' status='skip'>
                         <h6 class="step-name" title=""><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When Click Network transaction</h6>
                             <div class="node-step">skipped</div>
@@ -955,13 +755,13 @@ Session ID: 04375ee4dea42346397ed1eb722e479a
 					<div class='category-heading'>
 						<span class='category-name'>@sanity</span>
 						<span class='category-status right'>
-						<span class='label fail'>2</span>
+						<span class='label pass'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
 							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 2</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -975,14 +775,14 @@ Session ID: 04375ee4dea42346397ed1eb722e479a
 								</thead>
 								<tbody>
 									<tr>
-										<td>Nov 10, 2019 03:05:38 PM</td>
+										<td>Nov 10, 2019 10:08:51 PM</td>
 										<td class='linked' test-id='3'>Automate CMSe Application.Login Page.Login Page</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Nov 10, 2019 03:05:56 PM</td>
+										<td>Nov 10, 2019 10:09:56 PM</td>
 										<td class='linked' test-id='11'>Automate CMSe Application.Open Card.Open Card</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -993,13 +793,13 @@ Session ID: 04375ee4dea42346397ed1eb722e479a
 					<div class='category-heading'>
 						<span class='category-name'>@regression</span>
 						<span class='category-status right'>
-						<span class='label fail'>4</span>
+						<span class='label pass'>4</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 4</span>
 							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 4</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -1013,24 +813,24 @@ Session ID: 04375ee4dea42346397ed1eb722e479a
 								</thead>
 								<tbody>
 									<tr>
-										<td>Nov 10, 2019 03:05:56 PM</td>
+										<td>Nov 10, 2019 10:10:38 PM</td>
 										<td class='linked' test-id='26'>Automate CMSe Application.Search Card</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Nov 10, 2019 03:05:57 PM</td>
+										<td>Nov 10, 2019 10:11:26 PM</td>
 										<td class='linked' test-id='42'>Automate CMSe Application.Card to card transfer.Card to card transfer</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Nov 10, 2019 03:05:57 PM</td>
+										<td>Nov 10, 2019 10:11:31 PM</td>
 										<td class='linked' test-id='50'>Automate CMSe Application.Prepaid Card Pin Change.Prepaid Card Pin Change</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Nov 10, 2019 03:05:57 PM</td>
+										<td>Nov 10, 2019 10:11:59 PM</td>
 										<td class='linked' test-id='58'>Automate CMSe Application.Card Information update.Card Information update</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -1067,7 +867,7 @@ Session ID: 04375ee4dea42346397ed1eb722e479a
 				<li class='exception displayed active'>
 					<div class='exception-heading'>
 						<span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>10</span></span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
 					</div>
 					<div class='exception-content hide'>
 						<div class='exception-tests'>
@@ -1081,18 +881,18 @@ Session ID: 04375ee4dea42346397ed1eb722e479a
 								</thead>
 								<tbody>
 									<tr>
-										<td>Nov 10, 2019 03:05:56 PM</td>
-										<td class='linked' test-id='9'>Automate CMSe Application.Login Page.Login Page.Then Validate Login Page</td>
+										<td>Nov 10, 2019 10:12:17 PM</td>
+										<td class='linked' test-id='74'>Automate CMSe Application.Product ID Creation and Linking to Card Number.Product ID Creation and Linking to Card Number.When Click Service Charge link</td>
 										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="bannerLinkForm"]/a[2]"}
-  (Session info: chrome=78.0.3904.87)
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='SVC']"}
+  (Session info: chrome=78.0.3904.97)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'MAA2-LTD47MX52', ip: '10.42.25.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'MAA2-LTD47MX52', ip: '10.42.27.77', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\e3004592\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56939}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 04375ee4dea42346397ed1eb722e479a
-*** Element info: {Using=xpath, value=//*[@id="bannerLinkForm"]/a[2]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\e3004592\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64414}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c067e5d148cd271632bdd17e1b42d758
+*** Element info: {Using=xpath, value=//*[@id='SVC']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -1107,24 +907,24 @@ Session ID: 04375ee4dea42346397ed1eb722e479a
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at stepDefinition.Implementation.validate_Login_Page(Implementation.java:81)
-	at ?.Then Validate Login Page(SmartBear1.feature:9)
+	at stepDefinition.Implementation.click_Service_Charge_link(Implementation.java:545)
+	at ?.When Click Service Charge link(SmartBear3.feature:9)
 </textarea>
 										</td>
 									</tr>
 									<tr>
-										<td>Nov 10, 2019 03:05:56 PM</td>
-										<td class='linked' test-id='12'>Automate CMSe Application.Open Card.Open Card.When Enter Institution ID  "00548"</td>
+										<td>Nov 10, 2019 10:12:22 PM</td>
+										<td class='linked' test-id='93'>Automate CMSe Application.Product ID Creation and Linking to Card Number.Product ID Creation and Linking to Card Number.When Click Service Charge link</td>
 										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='inst']"}
-  (Session info: chrome=78.0.3904.87)
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='SVC']"}
+  (Session info: chrome=78.0.3904.97)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'MAA2-LTD47MX52', ip: '10.42.25.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+System info: host: 'MAA2-LTD47MX52', ip: '10.42.27.77', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\e3004592\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56939}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 04375ee4dea42346397ed1eb722e479a
-*** Element info: {Using=xpath, value=//*[@id='inst']}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\e3004592\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64414}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c067e5d148cd271632bdd17e1b42d758
+*** Element info: {Using=xpath, value=//*[@id='SVC']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -1139,264 +939,8 @@ Session ID: 04375ee4dea42346397ed1eb722e479a
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at stepDefinition.Implementation.enter_Institution_ID(Implementation.java:100)
-	at ?.When Enter Institution ID  "00548"(SmartBear1.feature:17)
-</textarea>
-										</td>
-									</tr>
-									<tr>
-										<td>Nov 10, 2019 03:05:56 PM</td>
-										<td class='linked' test-id='27'>Automate CMSe Application.Search Card.When Click Search Button</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='searchSubmit']"}
-  (Session info: chrome=78.0.3904.87)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'MAA2-LTD47MX52', ip: '10.42.25.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\e3004592\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56939}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 04375ee4dea42346397ed1eb722e479a
-*** Element info: {Using=xpath, value=//*[@id='searchSubmit']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at stepDefinition.Implementation.click_Search_Button(Implementation.java:238)
-	at ?.When Click Search Button(SmartBear1.feature:39)
-</textarea>
-										</td>
-									</tr>
-									<tr>
-										<td>Nov 10, 2019 03:05:57 PM</td>
-										<td class='linked' test-id='30'>Automate CMSe Application.Card Status change.Card Status change.When Click Neg File/Status</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='NegFile']"}
-  (Session info: chrome=78.0.3904.87)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'MAA2-LTD47MX52', ip: '10.42.25.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\e3004592\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56939}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 04375ee4dea42346397ed1eb722e479a
-*** Element info: {Using=xpath, value=//*[@id='NegFile']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at stepDefinition.Implementation.click_Neg_File_Status(Implementation.java:246)
-	at ?.When Click Neg File/Status(SmartBear1.feature:42)
-</textarea>
-										</td>
-									</tr>
-									<tr>
-										<td>Nov 10, 2019 03:05:57 PM</td>
-										<td class='linked' test-id='37'>Automate CMSe Application.Add Fund.Add Fund.When Click Add Fund</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='PrepaidDebit']"}
-  (Session info: chrome=78.0.3904.87)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'MAA2-LTD47MX52', ip: '10.42.25.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\e3004592\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56939}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 04375ee4dea42346397ed1eb722e479a
-*** Element info: {Using=xpath, value=//*[@id='PrepaidDebit']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at stepDefinition.Implementation.click_Add_Fund(Implementation.java:292)
-	at ?.When Click Add Fund(SmartBear1.feature:53)
-</textarea>
-										</td>
-									</tr>
-									<tr>
-										<td>Nov 10, 2019 03:05:57 PM</td>
-										<td class='linked' test-id='43'>Automate CMSe Application.Card to card transfer.Card to card transfer.When Click cardtocard transfer</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='PrepaidDebit']"}
-  (Session info: chrome=78.0.3904.87)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'MAA2-LTD47MX52', ip: '10.42.25.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\e3004592\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56939}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 04375ee4dea42346397ed1eb722e479a
-*** Element info: {Using=xpath, value=//*[@id='PrepaidDebit']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at stepDefinition.Implementation.click_cardtocard_transfer(Implementation.java:332)
-	at ?.When Click cardtocard transfer(SmartBear1.feature:64)
-</textarea>
-										</td>
-									</tr>
-									<tr>
-										<td>Nov 10, 2019 03:05:57 PM</td>
-										<td class='linked' test-id='51'>Automate CMSe Application.Prepaid Card Pin Change.Prepaid Card Pin Change.When Click cards and pin link</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='CardPin']"}
-  (Session info: chrome=78.0.3904.87)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'MAA2-LTD47MX52', ip: '10.42.25.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\e3004592\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56939}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 04375ee4dea42346397ed1eb722e479a
-*** Element info: {Using=xpath, value=//*[@id='CardPin']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at stepDefinition.Implementation.click_cards_and_pin_link(Implementation.java:391)
-	at ?.When Click cards and pin link(SmartBear2.feature:4)
-</textarea>
-										</td>
-									</tr>
-									<tr>
-										<td>Nov 10, 2019 03:05:57 PM</td>
-										<td class='linked' test-id='59'>Automate CMSe Application.Card Information update.Card Information update.When Click Card information link</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='CustomerInformation']"}
-  (Session info: chrome=78.0.3904.87)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'MAA2-LTD47MX52', ip: '10.42.25.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\e3004592\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56939}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 04375ee4dea42346397ed1eb722e479a
-*** Element info: {Using=xpath, value=//*[@id='CustomerInformation']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at stepDefinition.Implementation.click_Card_information_link(Implementation.java:443)
-	at ?.When Click Card information link(SmartBear2.feature:17)
-</textarea>
-										</td>
-									</tr>
-									<tr>
-										<td>Nov 10, 2019 03:05:57 PM</td>
-										<td class='linked' test-id='68'>Automate CMSe Application.Product ID Creation and Linking to Card Number.Product ID Creation and Linking to Card Number.When Click product id tab</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='ProductMenuTab']"}
-  (Session info: chrome=78.0.3904.87)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'MAA2-LTD47MX52', ip: '10.42.25.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\e3004592\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56939}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 04375ee4dea42346397ed1eb722e479a
-*** Element info: {Using=xpath, value=//*[@id='ProductMenuTab']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at stepDefinition.Implementation.click_product_id_tab(Implementation.java:496)
-	at ?.When Click product id tab(SmartBear3.feature:3)
-</textarea>
-										</td>
-									</tr>
-									<tr>
-										<td>Nov 10, 2019 03:05:57 PM</td>
-										<td class='linked' test-id='87'>Automate CMSe Application.Product ID Creation and Linking to Card Number.Product ID Creation and Linking to Card Number.When Click product id tab</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='ProductMenuTab']"}
-  (Session info: chrome=78.0.3904.87)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'MAA2-LTD47MX52', ip: '10.42.25.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.87, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\e3004592\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56939}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 04375ee4dea42346397ed1eb722e479a
-*** Element info: {Using=xpath, value=//*[@id='ProductMenuTab']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at stepDefinition.Implementation.click_product_id_tab(Implementation.java:496)
-	at ?.When Click product id tab(SmartBear3.feature:3)
+	at stepDefinition.Implementation.click_Service_Charge_link(Implementation.java:545)
+	at ?.When Click Service Charge link(SmartBear3.feature:9)
 </textarea>
 										</td>
 									</tr>
@@ -1440,19 +984,19 @@ Session ID: 04375ee4dea42346397ed1eb722e479a
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Nov 10, 2019 03:05:37 PM</div>
+					<div class='panel-lead'>Nov 10, 2019 10:08:49 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Nov 10, 2019 03:05:57 PM</div>
+			 		<div class='panel-lead'>Nov 10, 2019 10:12:22 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 20s+259ms</div>
+					<div class='panel-lead'>0h 3m 33s+12ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -1469,20 +1013,20 @@ Session ID: 04375ee4dea42346397ed1eb722e479a
 						</tr>
 						<tr>
 							<td>@sanity</td>
-							<td>0</td>
 							<td>2</td>
 							<td>0</td>
+							<td>0</td>
 							<td>
-									0%
+									100%
 							</td>
 						</tr>
 						<tr>
 							<td>@regression</td>
-							<td>0</td>
 							<td>4</td>
 							<td>0</td>
+							<td>0</td>
 							<td>
-									0%
+									100%
 							</td>
 						</tr>
 					</table>
@@ -1497,38 +1041,38 @@ Session ID: 04375ee4dea42346397ed1eb722e479a
 		<script>
 			var statusGroup = {
                 parentCount: 3,
-				passParent: 0,
-				failParent: 3,
+				passParent: 2,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 3,
+				exceptionsParent: 1,
 				childCount: 10,
-				passChild: 0,
-				failChild: 10,
+				passChild: 8,
+				failChild: 2,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
 				debugChild: 0,
-				exceptionsChild: 10,
+				exceptionsChild: 2,
 				grandChildCount: 83,
-				passGrandChild: 5,
-				failGrandChild: 10,
+				passGrandChild: 59,
+				failGrandChild: 2,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 68,
+				skipGrandChild: 22,
 				infoGrandChild: 0,
 				debugGrandChild: 0,
-				exceptionsGrandChild: 78,
+				exceptionsGrandChild: 24,
 			};
 		</script>
 		<script>
 			var timeline = {
-			        "Automate CMSe Application":19.212,"Automate CMSe Application":0.08,"Automate CMSe Application":0.182
+			        "Automate CMSe Application":160.709,"Automate CMSe Application":39.811,"Automate CMSe Application":11.124
 			};
 		</script>
 		<script src='https://cdn.rawgit.com/extent-framework/extent-github-cdn/b65cd69/v3html/js/extent.js' type='text/javascript'></script>

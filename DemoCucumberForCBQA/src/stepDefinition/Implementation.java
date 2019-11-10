@@ -37,18 +37,18 @@ public class Implementation {
 	}
 
 	@When("^Navigate into the CMSe application \"([^\"]*)\"$")
-	public void navigate_into_the_CMSe_application(String arg1) throws Throwable {
+	public void navigate_into_the_CMSe_application(String url) throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		driver.get(arg1);
+		driver.get(url);
 		driver.manage().window().maximize();
 		File file1 = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(file1, new File("C:\\Screenshot\\launch.png"));
 	}
 
 	@When("^Enter username  \"([^\"]*)\"$")
-	public void enter_username(String arg1) throws Throwable {
+	public void enter_username(String username) throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		driver.findElement(By.xpath(prop.getProperty("username"))).sendKeys(arg1);
+		driver.findElement(By.xpath(prop.getProperty("username"))).sendKeys(username);
 		File file2 = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(file2, new File("C:\\Screenshot\\username.png"));
 	}
