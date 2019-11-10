@@ -48,7 +48,7 @@ public class Implementation {
 	@When("^Enter username  \"([^\"]*)\"$")
 	public void enter_username(String username) throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		driver.findElement(By.xpath(prop.getProperty("username"))).sendKeys(username);
+		driver.findElement(By.xpath(prop.getProperty("cmse.userName"))).sendKeys(username);
 		File file2 = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(file2, new File("C:\\Screenshot\\username.png"));
 	}
@@ -56,7 +56,7 @@ public class Implementation {
 	@When("^Enter password  \"([^\"]*)\"$")
 	public void enter_password(String arg1) throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		driver.findElement(By.xpath(prop.getProperty("password"))).sendKeys(arg1);
+		driver.findElement(By.xpath(prop.getProperty("cmse.passWord"))).sendKeys(arg1);
 		File file3 = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(file3, new File("C:\\Screenshot\\password.png"));
 	}
@@ -78,7 +78,7 @@ public class Implementation {
 	@Then("^Validate Login Page$")
 	public void validate_Login_Page() throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		String loginsuccess = driver.findElement(By.xpath(prop.getProperty("loginsuccessful"))).getText();
+		String loginsuccess = driver.findElement(By.xpath(prop.getProperty("loginSuccessful"))).getText();
 		String expected = "Log Out";
 		String actual = loginsuccess;
 
@@ -106,7 +106,7 @@ public class Implementation {
 	@When("^Click Open Card$")
 	public void click_Open_Card() throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		driver.findElement(By.xpath(prop.getProperty("opencard"))).click();
+		driver.findElement(By.xpath(prop.getProperty("openCard"))).click();
 		int i = 1;
 		while (true) {
 			try {
@@ -133,7 +133,7 @@ public class Implementation {
 	public void click_Prefix_number() throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
 		// driver.findElement(By.xpath(prop.getProperty("prefix"))).click();
-		driver.findElement(By.xpath(prop.getProperty("skipprodid"))).click();
+		driver.findElement(By.xpath(prop.getProperty("skipProdid"))).click();
 		File file7 = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(file7, new File("C:\\Screenshot\\prefix.png"));
 	}
@@ -141,7 +141,7 @@ public class Implementation {
 	@When("^Click Generate Card$")
 	public void click_Generate_Card() throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		driver.findElement(By.xpath(prop.getProperty("generatecard"))).click();
+		driver.findElement(By.xpath(prop.getProperty("generateCard"))).click();
 		File file8 = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(file8, new File("C:\\Screenshot\\generatecard.png"));
 
@@ -192,7 +192,7 @@ public class Implementation {
 		// Write code here that turns the phrase above into concrete actions
 		driver.findElement(By.xpath(prop.getProperty("offset"))).sendKeys(arg1);
 		File file14 = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		FileHandler.copy(file14, new File("C:\\Screenshot\\offset.png"));
+		FileHandler.copy(file14, new File("C:\\Screenshot\\offSet.png"));
 	}
 
 	@When("^Click continue button$")
@@ -223,19 +223,19 @@ public class Implementation {
 	@Then("^Get the card number$")
 	public void get_the_card_number() throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		String cardnumber = driver.findElement(By.xpath(prop.getProperty("getcard"))).getText();
+		String cardnumber = driver.findElement(By.xpath(prop.getProperty("getCard"))).getText();
 		File file18 = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(file18, new File("C:\\Screenshot\\getcard.png"));
 		System.out.println(cardnumber);
-		driver.findElement(By.xpath(prop.getProperty("returntosearch"))).click();
-		driver.findElement(By.xpath(prop.getProperty("entercardnumber"))).sendKeys(cardnumber);
+		driver.findElement(By.xpath(prop.getProperty("returnToSearch"))).click();
+		driver.findElement(By.xpath(prop.getProperty("enterCardNumber"))).sendKeys(cardnumber);
 	}
 
 	@When("^Click Search Button$")
 	public void click_Search_Button() throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
 		Thread.sleep(1000);
-		driver.findElement(By.xpath(prop.getProperty("searchcard"))).click();
+		driver.findElement(By.xpath(prop.getProperty("searchCard"))).click();
 		File file19 = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(file19, new File("C:\\Screenshot\\searchcard.png"));
 	}
@@ -243,7 +243,7 @@ public class Implementation {
 	@When("^Click Neg File/Status$")
 	public void click_Neg_File_Status() throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		driver.findElement(By.xpath(prop.getProperty("negfile"))).click();
+		driver.findElement(By.xpath(prop.getProperty("negFile"))).click();
 		File file20 = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(file20, new File("C:\\Screenshot\\negfile.png"));
 	}
@@ -251,7 +251,7 @@ public class Implementation {
 	@When("^Click Active Check box$")
 	public void click_Active_Check_box() throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		driver.findElement(By.xpath(prop.getProperty("activedropdown"))).click();
+		driver.findElement(By.xpath(prop.getProperty("activeDropdown"))).click();
 		File file21 = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(file21, new File("C:\\Screenshot\\activedropdown.png"));
 
@@ -260,8 +260,8 @@ public class Implementation {
 	@When("^Select Do not add in Exception File Update Code \"([^\"]*)\"$")
 	public void select_Do_not_add_in_Exception_File_Update_Code(String arg1) throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		driver.findElement(By.xpath(prop.getProperty("fileupdatecode"))).click();
-		driver.findElement(By.xpath(prop.getProperty("fileupdatecode"))).sendKeys(arg1);
+		driver.findElement(By.xpath(prop.getProperty("fileUpdateCode"))).click();
+		driver.findElement(By.xpath(prop.getProperty("fileUpdateCode"))).sendKeys(arg1);
 		File file22 = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(file22, new File("C:\\Screenshot\\fileupdatecode.png"));
 	}
@@ -278,9 +278,9 @@ public class Implementation {
 	@When("^Enter Card status change submit$")
 	public void enter_Card_status_change_submit() throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		String dropdowntext = driver.findElement(By.xpath(prop.getProperty("activedropdownlabel"))).getText();
+		String dropdowntext = driver.findElement(By.xpath(prop.getProperty("activeDropdownLabel"))).getText();
 		System.out.println("Card Status=" + dropdowntext);
-		driver.findElement(By.xpath(prop.getProperty("negfilesubmit"))).click();
+		driver.findElement(By.xpath(prop.getProperty("negFileSubmit"))).click();
 		System.out.println("Card Status change is successful");
 		File file24 = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(file24, new File("C:\\Screenshot\\negfilesubmit.png"));
@@ -289,9 +289,9 @@ public class Implementation {
 	@When("^Click Add Fund$")
 	public void click_Add_Fund() throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		driver.findElement(By.xpath(prop.getProperty("prepdebit"))).click();
-		driver.findElement(By.xpath(prop.getProperty("fundopt"))).click();
-		driver.findElement(By.xpath(prop.getProperty("addfund"))).click();
+		driver.findElement(By.xpath(prop.getProperty("prepDebit"))).click();
+		driver.findElement(By.xpath(prop.getProperty("fundOpt"))).click();
+		driver.findElement(By.xpath(prop.getProperty("addFund"))).click();
 		File file25 = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(file25, new File("C:\\Screenshot\\addfund.png"));
 	}
@@ -299,8 +299,8 @@ public class Implementation {
 	@When("^Enter Amount \"([^\"]*)\"$")
 	public void enter_Amount(String arg1) throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		driver.findElement(By.xpath(prop.getProperty("addamount"))).clear();
-		driver.findElement(By.xpath(prop.getProperty("addamount"))).sendKeys(arg1);
+		driver.findElement(By.xpath(prop.getProperty("addAmount"))).clear();
+		driver.findElement(By.xpath(prop.getProperty("addAmount"))).sendKeys(arg1);
 		File file26 = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(file26, new File("C:\\Screenshot\\addamount.png"));
 
@@ -309,7 +309,7 @@ public class Implementation {
 	@When("^Click Add Fund Submit Button$")
 	public void click_Add_Fund_Submit_Button() throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		driver.findElement(By.xpath(prop.getProperty("addsubmit"))).click();
+		driver.findElement(By.xpath(prop.getProperty("addSubmit"))).click();
 		File file27 = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(file27, new File("C:\\Screenshot\\addsubmit.png"));
 	}
@@ -317,7 +317,7 @@ public class Implementation {
 	@Then("^Validate the add fund$")
 	public void validate_the_add_fund() throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		String addamount = driver.findElement(By.xpath(prop.getProperty("addfundsuccessful"))).getText();
+		String addamount = driver.findElement(By.xpath(prop.getProperty("addFundSuccessful"))).getText();
 		// System.out.println(addamount);
 		if (addamount != null) {
 			System.out.println("Add fund is successfull");
@@ -329,9 +329,9 @@ public class Implementation {
 	@When("^Click cardtocard transfer$")
 	public void click_cardtocard_transfer() throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		driver.findElement(By.xpath(prop.getProperty("prepdebit"))).click();
-		driver.findElement(By.xpath(prop.getProperty("fundopt"))).click();
-		driver.findElement(By.xpath(prop.getProperty("cardtocardtransfer"))).click();
+		driver.findElement(By.xpath(prop.getProperty("prepDebit"))).click();
+		driver.findElement(By.xpath(prop.getProperty("fundOpt"))).click();
+		driver.findElement(By.xpath(prop.getProperty("cardToCardTransfer"))).click();
 		File file28 = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(file28, new File("C:\\Screenshot\\cardtocardtransfer.png"));
 	}
@@ -339,8 +339,8 @@ public class Implementation {
 	@When("^Enter Transfer Amount \"([^\"]*)\"$")
 	public void enter_Transfer_Amount(String arg1) throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		driver.findElement(By.xpath(prop.getProperty("transferamount"))).click();
-		driver.findElement(By.xpath(prop.getProperty("transferamount"))).sendKeys(arg1);
+		driver.findElement(By.xpath(prop.getProperty("transferAmount"))).click();
+		driver.findElement(By.xpath(prop.getProperty("transferAmount"))).sendKeys(arg1);
 		File file29 = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(file29, new File("C:\\Screenshot\\transferamount.png"));
 	}
@@ -358,7 +358,7 @@ public class Implementation {
 	@When("^Enter funding card number \"([^\"]*)\"$")
 	public void enter_funding_card_number(String arg1) throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		driver.findElement(By.xpath(prop.getProperty("fundingcard"))).sendKeys(arg1);
+		driver.findElement(By.xpath(prop.getProperty("fundingCard"))).sendKeys(arg1);
 		File file30 = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(file30, new File("C:\\Screenshot\\fundingcard.png"));
 	}
@@ -366,8 +366,8 @@ public class Implementation {
 	@When("^click ctoc Submit$")
 	public void click_ctoc_Submit() throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		driver.findElement(By.xpath(prop.getProperty("ctcsubmit"))).click();
-		driver.findElement(By.xpath(prop.getProperty("ctcfinalsubmit"))).click();
+		driver.findElement(By.xpath(prop.getProperty("ctcSubmit"))).click();
+		driver.findElement(By.xpath(prop.getProperty("ctcFinalSubmit"))).click();
 		File file31 = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(file31, new File("C:\\Screenshot\\ctcfinalsubmit.png"));
 
@@ -376,7 +376,7 @@ public class Implementation {
 	@Then("^Validate card to card transfer$")
 	public void validate_card_to_card_transfer() throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		String c2cfinalmsg = driver.findElement(By.xpath(prop.getProperty("ctcmessage"))).getText();
+		String c2cfinalmsg = driver.findElement(By.xpath(prop.getProperty("ctcMessage"))).getText();
 		// System.out.println(c2cfinalmsg);
 		if (c2cfinalmsg != null) {
 			System.out.println("Card to Card transfer is successfull");
@@ -388,7 +388,7 @@ public class Implementation {
 	@When("^Click cards and pin link$")
 	public void click_cards_and_pin_link() throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		driver.findElement(By.xpath(prop.getProperty("cardandpin"))).click();
+		driver.findElement(By.xpath(prop.getProperty("cardAndPin"))).click();
 		File file32 = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(file32, new File("C:\\Screenshot\\cardandpin.png"));
 	}
@@ -396,7 +396,7 @@ public class Implementation {
 	@When("^Click update$")
 	public void click_update() throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		driver.findElement(By.xpath(prop.getProperty("cardandpinupdate"))).click();
+		driver.findElement(By.xpath(prop.getProperty("cardAndPinUpdate"))).click();
 		File file33 = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(file33, new File("C:\\Screenshot\\cardandpinupdate.png"));
 	}
@@ -404,7 +404,7 @@ public class Implementation {
 	@When("^Enter new PIN \"([^\"]*)\"$")
 	public void enter_new_PIN(String arg1) throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		driver.findElement(By.xpath(prop.getProperty("newpin"))).sendKeys(arg1);
+		driver.findElement(By.xpath(prop.getProperty("newPin"))).sendKeys(arg1);
 		File file34 = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(file34, new File("C:\\Screenshot\\newpin.png"));
 	}
@@ -412,7 +412,7 @@ public class Implementation {
 	@When("^Re enter new pin \"([^\"]*)\"$")
 	public void re_enter_new_pin(String arg1) throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		driver.findElement(By.xpath(prop.getProperty("reenterpin"))).sendKeys(arg1);
+		driver.findElement(By.xpath(prop.getProperty("reEnterPin"))).sendKeys(arg1);
 		File file35 = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(file35, new File("C:\\Screenshot\\reenterpin.png"));
 	}
@@ -420,7 +420,7 @@ public class Implementation {
 	@When("^Click update pin submit$")
 	public void click_update_pin_submit() throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		driver.findElement(By.xpath(prop.getProperty("pinchangesubmit"))).click();
+		driver.findElement(By.xpath(prop.getProperty("pinChangeSubmit"))).click();
 		File file36 = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(file36, new File("C:\\Screenshot\\pinchangesubmit.png"));
 	}
@@ -428,7 +428,7 @@ public class Implementation {
 	@Then("^Validate PIN Change$")
 	public void validate_PIN_Change() throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		String pinchange = driver.findElement(By.xpath(prop.getProperty("pinchangesuccess"))).getText();
+		String pinchange = driver.findElement(By.xpath(prop.getProperty("pinChangeSuccess"))).getText();
 		// System.out.println(pinchange);
 		if (pinchange != null) {
 			System.out.println("PIN Change is successfull");
@@ -440,7 +440,7 @@ public class Implementation {
 	@When("^Click Card information link$")
 	public void click_Card_information_link() throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		driver.findElement(By.xpath(prop.getProperty("cardinfo"))).click();
+		driver.findElement(By.xpath(prop.getProperty("cardInfo"))).click();
 		File file37= ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(file37, new File("C:\\Screenshot\\cardinfo.png"));
 	}
@@ -448,7 +448,7 @@ public class Implementation {
 	@When("^Click Card info update link$")
 	public void click_Card_info_update_link() throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		driver.findElement(By.xpath(prop.getProperty("cardinfoupdate"))).click();
+		driver.findElement(By.xpath(prop.getProperty("cardInfoUpdate"))).click();
 		File file38= ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(file38, new File("C:\\Screenshot\\cardinfoupdate.png"));
 	}
@@ -456,8 +456,8 @@ public class Implementation {
 	@When("^Update address \"([^\"]*)\"$")
 	public void update_address(String arg1) throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		driver.findElement(By.xpath(prop.getProperty("updateaddress1"))).clear();
-		driver.findElement(By.xpath(prop.getProperty("updateaddress1"))).sendKeys(arg1);
+		driver.findElement(By.xpath(prop.getProperty("updateAddress1"))).clear();
+		driver.findElement(By.xpath(prop.getProperty("updateAddress1"))).sendKeys(arg1);
 		File file39= ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(file39, new File("C:\\Screenshot\\updateaddress1.png"));
 	}
@@ -465,7 +465,7 @@ public class Implementation {
 	@When("^Click Card info Continue buuton$")
 	public void click_Card_info_Continue_buuton() throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		driver.findElement(By.xpath(prop.getProperty("cardinfocontinue"))).click();
+		driver.findElement(By.xpath(prop.getProperty("cardInfoContinue"))).click();
 		File file40= ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(file40, new File("C:\\Screenshot\\cardinfocontinue.png"));
 	}
@@ -473,7 +473,7 @@ public class Implementation {
 	@When("^Click Card info Submit Button$")
 	public void click_Card_info_Submit_Button() throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		driver.findElement(By.xpath(prop.getProperty("cardinfosubmit"))).click();
+		driver.findElement(By.xpath(prop.getProperty("cardInfoSubmit"))).click();
 		File file41= ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(file41, new File("C:\\Screenshot\\cardinfosubmit.png"));
 	}
@@ -481,7 +481,7 @@ public class Implementation {
 	@When("^Validate the Card info update$")
 	public void validate_the_Card_info_update() throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		String cardinfochange = driver.findElement(By.xpath(prop.getProperty("cardinfoupdatesuccess"))).getText();
+		String cardinfochange = driver.findElement(By.xpath(prop.getProperty("cardInfoUpdateSuccess"))).getText();
 		// System.out.println(pinchange);
 		if (cardinfochange != null) {
 			System.out.println("Card Info Change is successfull");
@@ -493,7 +493,7 @@ public class Implementation {
 	@When("^Click product id tab$")
 	public void click_product_id_tab() throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		driver.findElement(By.xpath(prop.getProperty("productid"))).click();
+		driver.findElement(By.xpath(prop.getProperty("productId"))).click();
 		File file42= ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(file42, new File("C:\\Screenshot\\productid.png"));
 	}
@@ -501,8 +501,8 @@ public class Implementation {
 	@When("^Enter instituion id in product id search  \"([^\"]*)\"$")
 	public void enter_instituion_id_in_product_id_search(String arg1) throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		driver.findElement(By.xpath(prop.getProperty("prodinsid"))).clear();
-		driver.findElement(By.xpath(prop.getProperty("prodinsid"))).sendKeys(arg1);
+		driver.findElement(By.xpath(prop.getProperty("prodInsId"))).clear();
+		driver.findElement(By.xpath(prop.getProperty("prodInsId"))).sendKeys(arg1);
 		File file43= ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(file43, new File("C:\\Screenshot\\productid.png"));
 	}
@@ -510,7 +510,7 @@ public class Implementation {
 	@When("^Click Add product id$")
 	public void click_Add_product_id() throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		driver.findElement(By.xpath(prop.getProperty("addproductid"))).click();
+		driver.findElement(By.xpath(prop.getProperty("addProductId"))).click();
 		File file44= ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(file44, new File("C:\\Screenshot\\addproductid.png"));
 	}
@@ -518,7 +518,7 @@ public class Implementation {
 	@When("^Enter the name of product id  \"([^\"]*)\"$")
 	public void enter_the_name_of_product_id(String arg1) throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		driver.findElement(By.xpath(prop.getProperty("enternewprodid"))).sendKeys(arg1);
+		driver.findElement(By.xpath(prop.getProperty("enterNewprodId"))).sendKeys(arg1);
 		File file45= ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(file45, new File("C:\\Screenshot\\enternewprodid.png"));
 	}
@@ -526,7 +526,7 @@ public class Implementation {
 	@When("^Enter the product id description \"([^\"]*)\"$")
 	public void enter_the_product_id_description(String arg1) throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		driver.findElement(By.xpath(prop.getProperty("enterprodiddesc"))).sendKeys(arg1);
+		driver.findElement(By.xpath(prop.getProperty("enterProdIdDesc"))).sendKeys(arg1);
 		File file46= ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(file46, new File("C:\\Screenshot\\enterprodiddesc.png"));
 	}
@@ -534,7 +534,7 @@ public class Implementation {
 	@When("^Click Continue button in add product id page$")
 	public void click_Continue_button_in_add_product_id_page() throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		driver.findElement(By.xpath(prop.getProperty("prodidcontinue"))).click();
+		driver.findElement(By.xpath(prop.getProperty("prodIdContinue"))).click();
 		File file47= ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(file47, new File("C:\\Screenshot\\prodidcontinue.png"));
 	}
@@ -542,7 +542,7 @@ public class Implementation {
 	@When("^Click Service Charge link$")
 	public void click_Service_Charge_link() throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		driver.findElement(By.xpath(prop.getProperty("servicechargedropdown"))).click();
+		driver.findElement(By.xpath(prop.getProperty("serviceChargeDropdown"))).click();
 		File file48= ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(file48, new File("C:\\Screenshot\\servicechargedropdown.png"));
 	}
@@ -550,7 +550,7 @@ public class Implementation {
 	@When("^Click Network transaction$")
 	public void click_Network_transaction() throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		driver.findElement(By.xpath(prop.getProperty("networktransaction"))).click();
+		driver.findElement(By.xpath(prop.getProperty("networkTransaction"))).click();
 		File file49= ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(file49, new File("C:\\Screenshot\\networktransaction.png"));
 	}
@@ -558,7 +558,7 @@ public class Implementation {
 	@When("^Click ATM Deposit$")
 	public void click_ATM_Deposit() throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		driver.findElement(By.xpath(prop.getProperty("atmdeposit"))).click();
+		driver.findElement(By.xpath(prop.getProperty("atmDeposit"))).click();
 		File file50= ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(file50, new File("C:\\Screenshot\\atmdeposit.png"));
 	}
@@ -566,7 +566,7 @@ public class Implementation {
 	@When("^Click No value added in Deposit ONUS$")
 	public void click_No_value_added_in_Deposit_ONUS() throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		driver.findElement(By.xpath(prop.getProperty("depositonus"))).click();
+		driver.findElement(By.xpath(prop.getProperty("depositOnus"))).click();
 		File file51= ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(file51, new File("C:\\Screenshot\\depositonus.png"));
 
@@ -575,7 +575,7 @@ public class Implementation {
 	@When("^Enter the Deposit ONUS SVC Fee  \"([^\"]*)\"$")
 	public void enter_the_Deposit_ONUS_SVC_Fee(String arg1) throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		driver.findElement(By.xpath(prop.getProperty("enterdepositonus1"))).sendKeys(arg1);
+		driver.findElement(By.xpath(prop.getProperty("enterDepositOnus1"))).sendKeys(arg1);
 		File file52= ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(file52, new File("C:\\Screenshot\\enterdepositonus1.png"));
 	}
@@ -583,7 +583,7 @@ public class Implementation {
 	@When("^Click Plus symbol in Deposit ONUS$")
 	public void click_Plus_symbol_in_Deposit_ONUS() throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		driver.findElement(By.xpath(prop.getProperty("plussymbol1"))).click();
+		driver.findElement(By.xpath(prop.getProperty("plusSymbol1"))).click();
 		File file53= ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(file53, new File("C:\\Screenshot\\plussymbol1.png"));
 
@@ -592,7 +592,7 @@ public class Implementation {
 	@When("^Click No value added in Deposit Foreign$")
 	public void click_No_value_added_in_Deposit_Foreign() throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		driver.findElement(By.xpath(prop.getProperty("depositforeign"))).click();
+		driver.findElement(By.xpath(prop.getProperty("deposItForeign"))).click();
 		File file54= ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(file54, new File("C:\\Screenshot\\depositforeign.png"));
 	}
@@ -600,7 +600,7 @@ public class Implementation {
 	@When("^Enter the Deposit Foreign SVC Fee  \"([^\"]*)\"$")
 	public void enter_the_Deposit_Foreign_SVC_Fee(String arg1) throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		driver.findElement(By.xpath(prop.getProperty("enterdepositonus2"))).sendKeys(arg1);
+		driver.findElement(By.xpath(prop.getProperty("enterDepositOnus2"))).sendKeys(arg1);
 		File file55= ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(file55, new File("C:\\Screenshot\\enterdepositonus2.png"));
 	}
@@ -608,7 +608,7 @@ public class Implementation {
 	@When("^Click Plus symbol in Deposit Foreign$")
 	public void click_Plus_symbol_in_Deposit_Foreign() throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		driver.findElement(By.xpath(prop.getProperty("plussymbol2"))).click();
+		driver.findElement(By.xpath(prop.getProperty("plusSymbol2"))).click();
 		File file56= ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(file56, new File("C:\\Screenshot\\plussymbol2.png"));
 		
@@ -617,7 +617,7 @@ public class Implementation {
 	@When("^Click Continue button in Add Product ID Page$")
 	public void click_Continue_button_in_Add_Product_ID_Page() throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		driver.findElement(By.xpath(prop.getProperty("productcontinuebutton"))).click();
+		driver.findElement(By.xpath(prop.getProperty("productContinueButton"))).click();
 		File file57= ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(file57, new File("C:\\Screenshot\\productcontinuebutton.png"));
 	}
@@ -625,7 +625,7 @@ public class Implementation {
 	@When("^Click Submit button in Review Product id page$")
 	public void click_Submit_button_in_Review_Product_id_page() throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		driver.findElement(By.xpath(prop.getProperty("productsubmit"))).click();
+		driver.findElement(By.xpath(prop.getProperty("productSubmit"))).click();
 		File file58= ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(file58, new File("C:\\Screenshot\\productsubmit.png"));
 	}
@@ -659,7 +659,7 @@ public class Implementation {
 	@When("^Click Search button for Product id addition$")
 	public void click_Search_button_for_Product_id_addition() throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		driver.findElement(By.xpath(prop.getProperty("cardsearchforprodid"))).click();
+		driver.findElement(By.xpath(prop.getProperty("cardSearchforProdid"))).click();
 		File file61= ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(file61, new File("C:\\Screenshot\\cardsearchforprodid.png"));
 	}
