@@ -2,7 +2,7 @@ package testRunner;
 
 import org.junit.runner.JUnitCore;
 
-public class TestRunner2 {
+public class TestRunner {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
